@@ -1,10 +1,9 @@
 const chai = require('chai');
 const expect = chai.expect;
 describe('Array', function() {
-    describe('#indexOf()', function() {
-      it('should return -1 when the value is not present', function() {
-        expect([1, 2, 3].indexOf(4)).to.equal(-1);
+    describe('#includes()', function() {
+      it('should return false when the value is not present', function() {
+        expect(['Mercedes','BMW','Opel'].includes('Audi')).to.equal(false);
       });
     });
   });
-  
